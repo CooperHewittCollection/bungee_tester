@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bungee – Fonts for multi-color and vertical typography</title>
+<link rel="canonical" href="https://djr.com/bungee/">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url" content="https://djr.com/bungee/">
+<meta property="og:image" content="https://djr.com/bungee/images/facebook.png">
+<meta property="og:type" content="product">
+<meta property="og:description" content="Bungee is a font family that celebrates urban signage. It wrangles the Latin alphabet to work vertically as well as horizontally, with separate glyphs, spacing, and kerning for each orientation. Bungee comes equipped with chromatic inlines, outlines, shades, and ornaments, making it the perfect toolkit to take your text in a new direction.">
+<script src="js/jquery.min.js"></script>
+<script src="//bungee-project.djr.com/resources/web/bungee.js"></script>
+<script src="js/typesetter.js"></script>
+<script src="js/bungee-website.js"></script>
+<script src="js/spectrum.js"></script>
+
+<!-- copy contents to data-content -->
+<script>
+$(function() {
+	$('h1,h3,.button').each(function() {
+		$(this).attr('data-content', $(this).text());
+	});
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('.content').hide();
+    $('.expanded .content').show();
+    $('.expander h5').click(function () {
+        var me = $(this).parent();
+        var others = me.siblings();
+	    me.toggleClass("expanded");
+	    others.removeClass("expanded");
+        me.find('.content').slideToggle(250);
+        others.find('.content').slideUp(250);
+        return false;
+    });
+});
+</script>
+
+
+    <!-- ga -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-78434519-1', 'auto');ga('send', 'pageview');ga('require', 'ecommerce');</script>
+
+
+<script type="text/javascript">
+/* Press the ~ key to toggle the show_edges class */
+$(document).keydown(function(e) {
+	var key = e.which;
+/*
+	if (key == 192) {
+		$("html").toggleClass("debug");
+	}
+
+	if (key == 67) {
+		$("html").toggleClass("colorswap");
+	}
+*/
+});
+</script>
+
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/fonts-basic.css">
+
+<link rel="stylesheet" href="//bungee-project.djr.com/resources/web/bungee.css">
+<link rel="stylesheet" href="css/typesetter.css">
+<link rel="stylesheet" href="css/spectrum.css">
+
+
+<!--<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade" rel="stylesheet">-->
+
+
+<style>
+
+/* porting over DJR.com styling */
+
+@font-face {
+	font-family: InputSansNarrowWeb;
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputSansNarrow-ExtraLight_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputSansNarrow-ExtraLight_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Input/ascii/InputSansNarrow-ExtraLight_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Input/ascii/InputSansNarrow-ExtraLight_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: InputSansNarrowWeb;
+	src: url("https://djr.com/assets/fonts-custom/InputSansNarrow-Medium_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts-custom/InputSansNarrow-Medium_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts-custom/InputSansNarrow-Medium_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts-custom/InputSansNarrow-Medium_TRIAL.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: InputSerifNarrowWeb;
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputSerifNarrow-ExtraLight_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputSerifNarrow-ExtraLight_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Input/ascii/InputSerifNarrow-ExtraLight_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Input/ascii/InputSerifNarrow-ExtraLight_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: InputMonoNarrowWeb;
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputMonoNarrow-ExtraLight_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Input/ascii/InputMonoNarrow-ExtraLight_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Input/ascii/InputMonoNarrow-ExtraLight_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Input/ascii/InputMonoNarrow-ExtraLight_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OutputSansWebX;
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Light_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Light_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Light_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Light_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OutputSansWebX;
+	src: url("fonts/OutputSans-LightItalic.eot");
+	src: url("fonts/OutputSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/OutputSans-LightItalic.woff2") format("woff2"), url("fonts/OutputSans-LightItalic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: OutputSansWebCaptionX;
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Regular_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Regular_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Regular_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Regular_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OutputSansWebCaptionX;
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Italic_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Italic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Italic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Italic_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: OutputSansWeb;
+	src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OutputSansWebX;
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Medium_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Medium_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Medium_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/ascii/OutputSans-Medium_TRIAL.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OutputSansWeb;
+	src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.eot");
+	src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+	#short-name { display: inline-block }
+	#full-name { display: none }
+
+
+@media (min-width: 48em) {
+	#short-name { 
+	    display: none ;
+	    }
+	#full-name { 
+	    display: block;
+	    position: absolute; 
+    	text-align: left;
+	}
+	nav { 
+	    text-align: right; 
+	    }
+}
+
+
+nav {
+	height: 1.7em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #771F15;
+	z-index: 100;
+	margin: 0;
+	padding: .2em 1em;
+	font-family: "InputSansNarrowWeb";
+}
+
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+	margin-top: 0;
+}
+nav a:link,
+nav a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.site-nav a, .title a {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.site-nav a:hover, .title a:hover {
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+.title {
+	position: absolute;
+	left: 0;
+	left: 2em;
+}
+
+.site-nav {
+	position: absolute;
+	right: 1.5em;
+}
+
+.site-nav .hidden-menu {
+	display: none;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.site-nav ul li {
+	display: inline-block;
+	margin: 0 .5em;
+}
+
+.site-nav ul li ul {
+	position: absolute;
+	visibility: hidden;
+	display: absolute;
+	text-align: left;
+	margin: 0;
+	margin-top: .3em;
+	z-index: 2;
+	padding-bottom: 0.5em #771F15 solid;
+}
+
+.site-nav ul li ul li {
+	display: block;
+	margin: 0;
+	background-color: #771F15;
+}
+
+.site-nav ul li ul li a {
+	display: block;
+    word-spacing: -.2em;
+	padding: .3em 1em .7em 1em;
+	text-transform: none;
+	letter-spacing: -.025em;
+	font-size: 11px;
+}
+
+#m1, #m2 {
+	margin-left: -.9em;
+	/*box-shadow: 1px 1px 0px $infobar-color;*/
+}
+
+#m2 {
+	width: 5.2em;
+}
+
+
+code {
+	font-family: InputMonoNarrowWeb;
+	font-size: .85;
+	background-color: rgba(1, 1, 1, .2);
+	padding: 0em .2em .2em .2em;
+	letter-spacing: -.025em;
+}
+
+
+#color-basic figure div:nth-child(even) {
+	color: #771F15;
+}
+#color-basic figure div:nth-child(odd) {
+	color: #DC4227;
+}
+#color-basic .bungee-basic-regular {
+	font-family: "Bungeee Regular";
+}
+#color-basic .bungee-basic-hairline {
+	font-family: "Bungeee Inline";
+
+}
+#color-basic .bungee-basic-inline {
+	font-family: "Bungeee Basic Inline";
+	
+}
+#color-basic .bungee-basic-outline {
+	font-family: "Bungeee Basic Outline";
+}
+.bungee-basic-shade {
+	font-family: "Bungeee Basic Shade";
+}
+
+.bungee-basic-regular, 
+.bungee-basic-hairline, 
+.bungee-basic-inline,
+.bungee-basic-outline,
+.bungee-basic-shade {
+    font-size: 5em;
+    line-height: .75em;
+}
+
+
+/* hacks */
+
+@media (min-width: 64em) and (min-height: 46em) {
+
+
+#color-basic .bungee-basic-regular {
+	margin-right: 1em;
+}
+	
+}
+
+</style>
+
+
+
+
+
+<style>
+* {
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: inherit;
+	color: inherit;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html::before { /* BREAKPOINT INDICATOR */
+	content: 'XXS';
+	font-family: Verdana, sans-serif;
+	font-size: 9px;
+	color: rgba(0,0,0, 0.5);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+html.debug::before {display: block;}
+html.debug * {outline: 1px dashed rgba(0,0,0, 0.5);}
+
+* + * { margin-top: 1rem;}
+.color-picker-container * + * { margin-top: 0; }
+
+html {
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: 'OutputSansWebX', 'OutputSansWeb', 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1;
+	color: #000;
+	background-color: #FFF;
+	background-color: #ede8e2;
+	margin: 0;
+}
+a:link,
+a:visited {
+	text-decoration: underline;
+	color: #C00;
+}
+a:hover,
+a:active {
+	color: #F00;
+}
+
+article {
+	position: relative;
+	/* moved height to L media query */
+}
+section {
+	position: relative;
+	padding: 5% 4% 6% 4%;
+	margin: 0;
+}
+section + section {
+/*
+	border-top: 1.5em solid #2E77C0;
+	border-top: 1.5em solid #25839E;
+*/
+}
+h1, h2, h3 {
+	font-family: 'Bungeee Regular';
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-family: 'Bungeee Shade';
+	letter-spacing: -.085em;
+	line-height: .8;
+	color: #771F15;
+	font-size: 4em;
+	margin-top: 1rem;
+	margin-bottom: .15em;
+	position: relative;
+	width: 100%;
+	z-index: 30;
+}
+h1::before {
+	content: "BUN-";
+	font-family: 'Bungeee Regular';
+	position: absolute;
+	top: 0;
+	color: #FFF;
+	left: 0;
+}
+h1::after {
+	content: "GEE!";
+	font-family: 'Bungeee Regular';
+	position: absolute;
+	top: 0.8em;
+	color: #FFF;
+	left: 0;
+}
+
+h1,
+h1::before,
+h1::after {
+	padding-left: .075em;
+	padding-right: 0;
+}
+
+h2 {
+	font-family: "Bungeee Regular";
+	font-size: 1.5em;
+	text-align: center;
+	color: #771F15;
+	line-height: 1.1em;
+	margin-top: 1.5em;
+	z-index: 30;
+}
+
+h3 {
+	font-family: 'Bungeee Shade';
+	font-size: 3em;
+	color: #E6AE17; /* dark orange */
+	color: #e2ddd7; /* medium gray */
+	color: #EFE446; /* medium yellow */
+	color: #E3CE9D; /* medium brown */
+	position: relative;
+	margin-bottom: .5em;
+}
+h3::before {
+	font-family: 'Bungeee Regular';
+	color: #FFF700; /* yellow */
+	color: #DC4227; /* red */
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*h3::after {
+	font-family: 'Bungeee Inline';
+	color: #EFE446;
+	color: #fff;
+	opacity: .6;
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+
+#get h3 {
+    color: #99211f;
+    visibility: hidden;
+}
+#get h3::before {
+    color: #99211f;
+    visibility: visible;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+p {
+	line-height: 1.4;
+	max-width: 40rem;
+}
+figure {
+	width: 100%;
+	max-width: 60em;
+}
+figcaption {
+	font-size: .675em;
+	letter-spacing: 0.03em;
+	margin-top: .5em;
+	white-space: normal;
+	font-family: OutputSansWebCaptionX;
+}
+.triptych {
+	white-space: nowrap;
+}
+.triptych img {
+	max-width: 32%;
+	height: auto;
+	margin: 0;
+}
+.triptych img + img {
+	margin-left: 2%;
+}
+img {
+	max-width: 100%;
+}
+strong {
+	font-weight: bold;
+}
+cite, em {
+	font-style: italic;
+}
+
+#cover, #get {
+	padding-top: 2rem;
+	position: relative;
+}
+
+
+
+
+#tester {
+	background-color: #FFF;
+	overflow-x: hidden;
+}
+#tester img {
+	width: 50vw;
+}
+#preview,
+#controls {
+	display: inline-block;
+}
+#preview.horizontal,
+#preview.horizontal + #controls {
+}
+#preview.vertical,
+#preview.vertical + #controls {
+	vertical-align: top;
+}
+#preview.vertical {
+	max-width: 50%;
+}
+#preview.vertical + #controls {
+	max-width: 50%;
+}
+#preview {
+	padding: 0;
+	overflow: visible;
+}
+#controls {
+	font-size: .875em;
+	white-space: normal;
+}
+#controls h5 + ul {
+	margin-top: .25em;
+}
+#controls li {
+	display: inline-block;
+	margin-top: .5em;
+	margin-right: .75em;
+}
+.expander {
+    cursor: default;
+}
+.expander h5::before {
+	content: '▸ ';
+}
+.expanded h5::before {
+	content: '▾ ';
+}
+/*
+#text-control,
+#size-control,
+#orientation-controls,
+#layer-controls,
+#banner-controls {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+}
+*/
+#text-control,
+#size-control,
+#orientation-controls {
+/* 	width: 33.33%; */
+}
+#text-control {
+	margin-top: 0;
+	margin-right: 1em;
+}
+#text-control h5 {
+	display: inline-block;
+}
+#orientation-controls {
+	display: inline-block;
+	margin-top: .66em;
+}
+#orientation-controls li {
+	margin-top: 0;
+}
+#layer-controls {
+/* 	width: 50%; */
+}
+#banner-controls {
+/* 	width: 50%; */
+}
+#background-controls {
+	
+}
+#background-controls ul {
+	margin-top: .25em;
+}
+#background-controls fieldset {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	margin-right: 1.5em;
+}
+#background-controls label {
+	margin-top: .25em;
+}
+#background-controls fieldset {
+	display: inline-block;
+}
+
+#color-formats img {
+	-webkit-box-shadow: 0 0 15px 3px #0E2027;
+	-moz-box-shadow: 0 0 15px 3px #0E2027;
+	box-shadow: 0 0 15px 3px #0E2027;
+}
+#CTA {
+	margin-top: 0;
+}
+#CTA li {
+    margin-bottom: 2rem;
+}
+.button,
+.button::before {
+	margin-top: 0;
+}
+.button:link,
+.button:visited {
+	font-family: 'Bungeee Shade';
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 3em;
+	color: #000;
+	color: #771F15;
+	position: relative;
+/*
+	text-shadow:
+		-1px -1px 0 #771F15,  
+		1px -1px 0 #771F15,
+		-1px 1px 0 #771F15,
+		1px 1px 0 #771F15;
+*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button::before {
+	font-family: 'Bungeee Regular';
+	color: #FFF;
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+li:hover .button {
+	font-family: 'Bungeee Shade';
+	font-family: 'Bungeee Outline';
+	color: #771F15 !important;
+	content: attr(data-content);
+	top: .12em;
+	left: -.12em;
+/* 	text-shadow: 0 0 .1em #771F15; */
+}
+/*
+.button:hover::before {
+	font-family: 'Bungeee Regular';
+	font-family: 'Bungeee Inline';
+	color: white;
+	content: attr(data-content);
+}
+*/
+
+
+
+
+input[type="text"] {
+	width: 8em;
+}
+input[type="range"] {
+	width: 4em;
+}
+.specimen img {
+	margin: 0;
+}
+.collapsing_specimen {
+	margin: 0;
+}
+
+.red {
+	background-color: #DC4227;
+}
+.yellow {
+	background-color: #EFE446;
+}
+.blue {
+	background-color: #2b839d;
+}
+.otherblue {
+	background-color: #22748c;
+}
+.dark {
+	background-color: #0E2027;
+}
+
+.red a, .blue a {
+    color: #EFE446;
+}
+.red a:hover, .blue a:hover {
+    color: #f9f287;
+}
+
+.blue,
+.otherblue,
+.dark, .red {
+	color: #FFF;
+}
+/*
+#intro {
+	background-color: red;
+}
+#tester {
+	background-color: orange;
+}
+#chromatic {
+	background-color: yellow;
+}
+#verticals {
+	background-color: green;
+}
+#alternates {
+	background-color: blue;
+}
+#ornaments {
+	background-color: purple;
+}
+#thanks {
+	background-color: violet;
+}
+*/
+
+html.colorswap body {background-color: #EFE446;}
+html.colorswap .specimen {background-color: #f4ede0;}
+
+html.colorswap h3 {color: #DC4227;}
+html.colorswap h3::after {color: #FFF;}
+
+.bungeee.regular {font-family: 'Bungeee Regular';}
+.bungeee.inline {font-family: 'Bungeee Inline';}
+.bungeee.outline {font-family: 'Bungeee Outline';}
+.bungeee.shade {font-family: 'Bungeee Shade';}
+
+.alt-rounds {
+	-moz-font-feature-settings: "ss02";
+	-webkit-font-feature-settings: "ss02";
+	font-feature-settings: "ss02";
+}
+.alt-e {
+	-moz-font-feature-settings: "ss03";
+	-webkit-font-feature-settings: "ss03";
+	font-feature-settings: "ss03";
+}
+.alt-i {
+	-moz-font-feature-settings: "ss04";
+	-webkit-font-feature-settings: "ss04";
+	font-feature-settings: "ss04";
+}
+.alt-l {
+	-moz-font-feature-settings: "ss05";
+	-webkit-font-feature-settings: "ss05";
+	font-feature-settings: "ss05";
+}
+.alt-amp {
+	-moz-font-feature-settings: "ss06";
+	-webkit-font-feature-settings: "ss06";
+	font-feature-settings: "ss06";
+}
+.alt-apos {
+	-moz-font-feature-settings: "ss07";
+	-webkit-font-feature-settings: "ss07";
+	font-feature-settings: "ss07";
+}
+.alt-ij {
+	-moz-font-feature-settings: "ss08";
+	-webkit-font-feature-settings: "ss08";
+	font-feature-settings: "ss08";
+}
+
+
+@media (min-width: 20em) {
+	html::before {content: 'XS';}
+}
+@media (min-width: 30em) {
+	html::before {content: 'S';}
+	h1 {font-size: 5em;}
+	h3 {font-size: 4em;}
+	.collapsing_specimen {
+		white-space: nowrap;
+		max-width: 50%;
+	}
+}
+@media (min-width: 48em) {
+	html::before {content: 'M';}
+	h2 {font-size: 2em;}
+}
+@media (min-width: 64em) {
+}
+@media (min-width: 64em) and (min-height: 36em) and (min-aspect-ratio: 6/5) { /* Horizontal mode! */
+	html::before {content: 'L';}
+	article {
+		white-space: nowrap;
+/*
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+*/
+		height: 100vh;
+		overflow-y: hidden;
+        /* two lines below for momentum on touch */
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	section {
+		position: relative;
+		padding: 1em 4em 2em 4em;
+		display: inline-block;
+		vertical-align: top;
+		white-space: normal;
+		height: 100vh;
+		overflow-y: auto;
+	}
+	section + section {
+		border-top: none;
+		/*border-left: 2em solid #25839E;*/
+	}
+	figure {
+		margin-top: 1rem;
+	}
+	.big_fig {
+		max-width: 100%;
+	}
+	.big_fig img {
+		max-height: calc(100vh - 15em);
+	}
+
+	#cover {
+		max-width: 115vh;
+		width: 85vw;
+		padding-left: 3em;
+		padding-right: 3em;
+		overflow: hidden;
+	}
+	#cover p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#tester {
+		width: 100%;
+	}
+	#get {
+		max-width: 85vw;
+	}
+	.specimen img {
+		max-width: none;
+		height: calc(100vh - 4em);
+	}
+	h2 {
+		font-size: 2em;
+		word-spacing: .15em;
+	}
+	h2 span {
+		display: inline-block;
+		margin-top: 0;
+	}
+	h3 {
+		font-family: 'Bungeee Rotated Shade', Impact;
+		position: absolute;
+		left: 1.5em;
+		top: .75rem;
+		
+		-ms-transform-origin: 0 1rem;
+		-moz-transform-origin: 0 1rem;
+		-webkit-transform-origin: 0 1rem;
+		-o-transform-origin: 0 1em;
+		
+		-ms-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		-webkit-transform:rotate(90deg);
+		-o-transform:rotate(90deg);
+		white-space: nowrap;
+	}
+	h3::before {
+		font-family: 'Bungeee Rotated Regular', Impact;
+	}
+	h3::after {
+		font-family: 'Bungeee Rotated Inline', Impact;
+	}
+	.has-heading {
+		padding-left: 9em;
+	}
+	
+}
+@media (min-width: 64em) and (min-height: 45em) and (min-aspect-ratio: 6/5) {
+	h3 {font-size: 5em;}
+	.has-heading {
+		padding-left: 11em;
+	}
+}
+@media (min-width: 64em) and (min-height: 54em) and (min-aspect-ratio: 6/5) {
+	h3 {font-size: 6em;}
+	.has-heading {
+		padding-left: 12em;
+	}
+}
+@media (min-width: 80em) {
+	html::before {content: 'XL';}
+}
+@media (min-width: 96em) {
+	html::before {content: 'XXL';}
+}
+</style>
+</head>
+
+<body>
+<article>
+ <section class="red" id="cover">
+	<!-- <nav class="site-nav">
+		<div id="full-name"><a href="https://djr.com">David Jonathan Ross</a></div>
+
+		<ul>
+			<li id="short-name"><a href="https://djr.com">DJR</a></li>
+
+			 <li><a class="typefaces" href="" onmouseover="mopen('m1')" onmouseout="mclosetime()">Typefaces</a> 
+				<ul id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<li><a href="https://fontofthemonth.club/">Font of the Month</a></li>
+					<li><a href="https://djr.com/bungee/">Bungee</a></li>
+					<li><a href="https://djr.com/condor/">Condor</a></li>
+					<li><a href="https://djr.com/fern/">Fern</a></li>
+					<li><a href="https://djr.com/fit/">Fit</a></li>
+					<li><a href="https://djr.com/forma/">Forma DJR</a></li>
+					<li><a href="https://djr.com/gimlet/">Gimlet</a></li>
+					<li><a href="https://djr.com/input/">Input</a></li>
+					<li><a href="https://djr.com/manicotti/">Manicotti</a></li>
+					<li><a href="https://djr.com/output/">Output</a></li>
+					<li><a href="https://djr.com/trilby/">Trilby</a></li>
+					<li><a href="https://djr.com/turnip/">Turnip</a></li>
+				</ul>
+			</li>
+			<li class="site-nav-notes">
+				<a href="https://djr.com/notes">Notes</a>
+			</li>
+			<li>
+				<a href="https://djr.com/about">About</a>
+			</li>
+		</ul>
+	</nav> -->
+	<h1 class="fit-to-width" data-max-font-size="45vh">Bun-<br />gee!</h1>
+	<h2><span>Fonts for vertical and</span> <span>multicolor typography</span></h2>
+ </section>
+ <!-- <section class="specimen yellow"> 
+	<figure class="collapsing_specimen">
+			<img src="images/specimen-vertical-B.svg" alt="Parking, Permanent Press, Tires, Lights, Liquid Detergent" /><img src="images/specimen-vertical-A.svg" alt="Soaps, Spin Cycle, Poolside, Coin-Ops" />
+	</figure> 
+</section>  -->
+<section data-max-font-size="45vh" id="tester">
+	<figure class="horizontal" id='preview' data-max-font-size="30vh"></figure><form id='controls' onsubmit='return false'>
+		<fieldset>
+			<label id='text-control'><h5>Text:</h5> <input type='text' name='text' value='Tester'></label>
+			<ul id='orientation-controls'>
+				<li><label><input type='radio' name='orientation' value='horizontal' checked>&nbsp;Horizontal</label></li>
+				<li><label><input type='radio' name='orientation' value='vertical'>&nbsp;Vertical</label></li>
+			</ul>
+		</fieldset>
+		
+		<fieldset class="expander expanded" id='preset-controls'>
+			<h5>Preset color themes</h5>
+			
+			<!-- <select id="preset-list" name="presets">
+				<option>Bodega</option>
+				<option>Motel</option>
+				<option>Fire Truck</option>
+				<option>Parking</option>
+				<option>Sundaes</option>
+				<option>Steam Boat</option>
+				<option>Bar</option>
+				<option>Drugs</option>
+				<option>Antiques</option>
+				<option>Rides</option>
+				<option>Pizza</option>
+				<option>Peep Show</option>
+				<option>Laundry</option>
+				<option>Tacos</option>
+				<option>$1</option>
+				<option>Repairs</option>
+				<option>Gas</option>
+				<option>Deli</option>
+				<option>Sale</option>
+				<option>Slots</option>
+				<option>Cigars</option>
+				<option>Theatre</option>
+				<option>Liquor</option>
+				<option>Hot Dogs</option>
+				<option>Café</option>
+				<option>Ice</option>
+				<option>Diner</option>
+				<option>Bowling</option>
+				<option>Open</option>
+			</select> -->
+			
+			<ul class="content" id="palettes">
+			</ul>
+		</fieldset>
+
+		<fieldset class="expander" id='layer-controls'>
+			<h5>Colors</h5>
+			<ul class="content">
+				<li>
+					<label><span data-layer='regular' class="swatch regular" style="background-color: #DC4227;"></span>&ensp;Base</label>
+				</li>
+				<li>
+					<label><span data-layer='inline' class="swatch inline" style="background-color: #FFFFFF;"></span>&ensp;Inline</label>
+				</li>
+				<li>
+					<label><span data-layer='outline' class="swatch outline" style="background-color: #ad1622"></span>&ensp;Outline</label>
+				</li>
+				<li>
+					<label><span data-layer='shade' class="swatch shade" style="background-color: rgba(128,128,128,0.3);"></span>&ensp;Shade</label>
+				</li>
+				<li>
+					<label><span data-layer='sign' class="swatch sign" style="background-color: #EFE446;"></span>&ensp;Banner</label>
+				</li>
+				<li>
+					<label><span data-layer='background' class="swatch background" style="background-color: #FFFFFF;"></span>&ensp;Background</label>
+				</li>
+			</ul>
+		</fieldset>
+		
+		<fieldset class="expander" id='banner-controls'>
+			<h5>Background shapes</h5>
+			<div class="content" id='background-controls'>
+				<fieldset><h6>Banner start</h6> <script>Bungee.backgroundInputList('begin');</script></fieldset>
+				<fieldset><h6>Banner end</h6> <script>Bungee.backgroundInputList('end');</script></fieldset>
+				<fieldset><h6>Block shapes</h6> <script>Bungee.backgroundInputList('block');</script></fieldset> 
+			</div>
+		</fieldset>
+		
+		<!-- <fieldset class="expander" id='stylistic-sets'>
+			<h5>Alternates</h5>
+			<ul class="content">
+				<li><label><input type='checkbox' name='alt' value='rounded'> Alternate A, M, N, W, X, Y</label></li>
+				<li><label><input type='checkbox' name='alt' value='e'> Round E</label></li>
+				<li><label><input type='checkbox' name='alt' value='i'> Simplified I</label></li>
+				<li><label><input type='checkbox' name='alt' value='l'> Simplified L</label></li>
+				<li><label><input type='checkbox' name='alt' value='amp'> Alternate ampersand</label></li>
+				<li><label><input type='checkbox' name='alt' value='quote'> Small apostrophe</label></li>
+			</ul>
+		</fieldset> -->
+		
+		<!-- <fieldset class="expander" id='save-share'>
+			<h5>Save/Share</h5>
+			<ul class="content">
+				<li><a href="" id='permalink'>Permalink</a></li>
+				<li><a href="" id='download-svg'>Download SVG</a></li>
+				<li><a href="" id='download-png'>Download PNG</a></li>
+				<li><a href="" id='download-pdf'>Download PDF</a></li>
+				<li><a href="" id='view-code'>View code</a></li>
+			</ul>
+		</fieldset> -->
+	</form>
+<!-- </section><section class="has-heading" id="stack"> -->
+	<!-- <h3>Stacking</h3>
+	<figure class="big_fig triptych">
+		<img src="images/photos/g-g-hardware.jpg" alt="G & G Hardware, Oakland, CA" /><img src="images/photos/little-city.jpg" alt="Little City, San Francisco, CA" /><img src="images/photos/tower-theater.jpg" alt="Tower Theater, Los Angeles, CA" />
+		<figcaption><p>Vertical signs in Oakland, San Francisco, and Los Angeles, CA.</p></figcaption>
+	</figure>
+
+	<p>Bungee is a typeface that celebrates the urban sign. From crummy liquor stores to majestic theaters, vertical signage fills our cities. They stack the Latin alphabet, one letter on top of the other, in order to make dramatic use of limited space. Following their lead, I designed Bungee to be able to adapt to horizontal or vertical text, so it is always ready to take your text in a new direction.</p> -->
+
+<!-- </section><section class="blue" id="stack-edges"> -->
+	<!-- <figure class="big_fig">
+		<img src="images/bungee-alpha.svg" alt="Bungee’s vertical forms" />
+	</figure>
+
+	<p>In vertical type, the downward flow of text becomes more important than the proportions of any individual letter. I drew Bungee’s round and diagonal characters with straight sides (see <em>O</em> and <em>A</em>), which reinforces their verticality and creates words with well-defined left and right edges. Letters that are unusually wide, narrow, or asymmetrical (such as <em>I</em>, <em>L</em>, <em>M</em>, and <em>W</em>) can be especially tricky. You can <a href="https://github.com/djrrb/Bungee/blob/master/documentation/4-stylistic-alternates.md#stylistic-set-09-john-downers-recommendations">avoid these letters</a> or play with Bungee’s alternates to get the best results for your design.</p> -->
+<!-- </section><section id="stack-issues">
+	<figure class="big_fig triptych">
+	 <img src="images/photos/martin-bros.jpg" alt="Martin Bros. Liquors, Cambridge, MA" /> -->
+		<!-- <img src="images/photos/serios-drugs.jpg" alt="Serio’s Drugs" /><img src="images/photos/telephone.jpg" alt="Telephone box, Philadelphia, PA" /><img src="images/photos/street-sign.jpg" alt="Street sign, Manchester, NH" />
+		
+		<figcaption><p>Unusual signs from Northampton, MA, Philadelphia, PA, and Manchester, NH.</p></figcaption>
+	</figure>
+	<p> -->
+	
+	<!-- </p> -->
+	<!--<p>Let’s get one thing straight: stacking the Latin alphabet is not always the best idea. The Latin alphabet is designed for horizontal writing, and vertical writing can create distortions that range from bizarre to unreadable.</p><p>But, in display typography, readability isn't everything. When used deftly and sparingly, Bungee’s stacked letters can help your words stand out among the crowd.</p>-->
+<!-- 	
+	<p>The Latin alphabet is designed for horizontal writing, and stacking it is not always the best idea. But, when used deftly and sparingly, I believe Bungee’s vertical forms can help your text stand out among the crowd. Despite readability issues for long and unfamiliar words, changing the text orientation may lead to unusual design solutions and raise interesting questions: How should I handle word breaks and apostrophes? How monowidth is too monowidth? Should I even consider using lowercase?</p> -->
+	 
+<!-- </section><section class="red" id="stack-implementation">
+	<figure class="big_fig">
+		<img src="images/bungee-spacing.svg" alt="Bungee’s Proportional Vertical Spacing" />
+	</figure>
+	<p>Bungee implements its vertical forms <a href="https://github.com/djrrb/Bungee/blob/master/documentation/3-vertical-text.md">via OpenType features</a> that are more commonly used for East Asian scripts. With proportional vertical spacing, Bungee allows each letter to be as tall as it needs to be. Bungee even has vertical kerning to combat pesky letter combinations! You can activate these features using the <a href="https://github.com/djrrb/Bungee/blob/master/documentation/3-vertical-text.md#in-design-apps">Vertical Text tools</a> that are available in some desktop applications, or by using CSS <code>writing-mode: vertical-rl</code> and <code>text-orientation:&nbsp;upright</code>.</p>
+	
+	</section><section class="" id="stack-process">
+	<figure class="big_fig">
+		<img src="images/photos/djr-sideways.jpg" alt="Kerning Bungee sideways." />
+	</figure>
+	<p>I began by drawing each of Bungee’s letterforms on its side, rotated 90° counter-clockwise. This allowed me to use horizontal tools to make a vertical design, but also presented me with some unusual design challenges. You can use this rotated version of Bungee in applications that cannot take advantage of Bungee’s OpenType vertical capabilities. <a href="https://github.com/djrrb/Bungee/blob/master/documentation/3-vertical-text.md#rotated-text-box">By rotating the text box</a> 90° clockwise, you can simulate vertical text in almost any environment.</p>
+
+</section><section class="yellow specimen">
+	<figure class="collapsing_specimen">
+			<img src="images/specimen-horizontal-A.svg" alt="Phở Đà Lạt, Rosa’s Liquors, Suits, Express, Boulangerie, Zapatería, Ray’s Diner" /><img src="images/specimen-horizontal-B.svg" alt="Barber, Hot Fresh Pizza, Cocktails, Vacancy, Luncheonette, Open 24 Hours, Motel" />
+	</figure>
+</section><section class="has-heading" id="color">
+	<h3>Color</h3>
+	<figure class="big_fig">
+		<img src="images/page-chromatic_etruscan.jpg" alt="Chromatic Etruscan No. 1" />
+		<figcaption><p>Chromatic Etruscan No. 1 from Wm. H. Page &amp; Co.’s 1874 book of chromatic type specimens.</p></figcaption>
+	</figure>
+
+<p>Chromatic fonts are nothing new: sets of wood type intended for overprinting were produced as early as 1841, and quickly became a popular way to add visual interest to posters and broadsides. Today we find ourselves in a renaissance of chromatic type, with many <a href="https://www.boldmonday.com/typeface/nitti-mostro/">incredible</a> <a href="http://www.photolettering.com">digital</a> <a href="https://www.myfonts.com/fonts/matchandkerosene/detroit/">fonts</a> released each year that come with layers for chromatic typesetting.</p>
+
+</section><section class="blue" id="color-styles">
+	<figure class="big_fig" id="bungee-layers-figure">
+		<img src="images/bungee-layers.gif" alt="Bungee’s Layers" />
+	</figure>
+	<p>Bungee comes in four layers: Regular, Inline, Outline, and Shade. <a href="https://github.com/djrrb/Bungee/blob/master/documentation/2-chromatic-layers.md">You can mix and match</a> these styles and their ornaments to create a variety of chromatic effects. In desktop apps, you can style each layer separately, and overlay them when you are finished. On the web, you can create layers using absolutely-positioned content in your <code>::before</code> or <code>::after</code> pseudo-class, or use <a href="https://github.com/djrrb/Bungee/tree/master/resources/web">bungee.js</a> to do the heavy lifting for you.</p>
+	
+</section><section class="" id="color-basic">
+	<figure class="big_fig" id="bungee-basic-figure">
+		<img src="images/bungee-basic.svg" alt="Bungee’s basic fonts" />
+		<figcaption><p>&nbsp;</p></figcaption>
+	</figure>
+	<p>For times when layering is not an option, I drew a separate set of five black-and-white fonts that are designed to fly solo. Since these fonts don’t require any advanced features, they will work effortlessly in any app or environment. These five fonts are also available <a href="http://fonts.google.com/?selection.family=Bungee&query=bungee">on Google Fonts</a>.</p>
+	
+</section><section id="color-formats" class="blue">
+	<figure class="big_fig">
+		<img src="images/bungee-color.gif" alt="BungeeColor in TextEdit" />
+	</figure>
+
+	<p>Bungee is also available in three flavors of <a href="https://github.com/djrrb/Bungee/blob/master/documentation/6-color-fonts.md">true OpenType color fonts</a>: <a href="https://hacks.mozilla.org/2014/10/svg-colors-in-opentype-fonts/">OT-SVG</a>, <a href="https://www.microsoft.com/typography/otspec/colr.htm">COLR/CPAL</a>, and <a href="https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6sbix.html">SBIX</a>. These fonts store color information inside the font itself, so it is possible to create chromatic effects even in the most basic typesetting environments. This technology is still developing, and support for color fonts is far from universal. Still, I am excited about the possibilities, and I hope that Bungee Color will help designers and developers explore and expand upon what color fonts have to offer.</p>
+</section><section class="yellow" id="feature-specimen">
+	<figure class="big_fig collapsing_specimen"><img src="images/specimen-features-A.svg" alt="Feature Specimen" /><img src="images/specimen-features-B.svg" alt="Feature Specimen" />
+	</figure>
+	<p>Bungee’s <a href="https://github.com/djrrb/Bungee/blob/master/documentation/4-stylistic-alternates.md">stylistic alternates</a> include simplified Deco forms, unserifed forms of <em>I</em> and <em>L</em>, and vertical ligatures for double-<em>II</em> and the Dutch <em>Ĳ</em>. Bungee also ships with a collection of <a href="https://github.com/djrrb/Bungee/blob/master/documentation/5-ornaments.md">arrows, pointing hands, and background shapes</a> that are inspired by the shapes and decorations on old commercial signs. Some of these background shapes will connect to form decorative banners, while others are meant to encircle a single letter.
+	
+</p>
+	 -->
+</section>
+<!-- <section class="has-heading" id="thanks">
+	<h3>Thanks</h3>
+	
+	<p>Thanks to support from <a href="https://www.google.com/fonts">Google</a> and <a href="http://www.fontbureau.com">The Font Bureau</a>, Bungee is released under the <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>, meaning that it is completely free and open-source.</p>
+	
+	<p>Making Bungee has been a great way for me to play with emerging font technologies. I sell most of my fonts commercially, but I belive Bungee is well-suited to a libre license because of its focus on emerging features like chromatic layers and vertical writing. Bungee was part of <a href="http://www.economist.com/blogs/babbage/2013/08/polychromatic-digital-type">Microsoft’s early experiments with color fonts</a>, and I hope that as a libre font, it will continue to encourage experimentation and development in this area. More widespread use of color fonts and vertical text will lead to better support, and I want Bungee to be a resource for designers and developers, professional and amateur alike. (If you wish to support my work, consider purchasing one of <a href="https://djr.com">my retail typefaces</a>!)</p>
+
+	<p>This responsive webpage was created by <a href="http://www.nicksherman.com">Nick Sherman</a>, <a href="http://www.chrislewis.codes">Chris Lewis</a>, and me. Like Bungee itself, its layout can switch from vertical to horizontal (depending on the dimensions of your screen).</p>
+
+	<p>Special thanks to Dave Crossland, Rob Giampetro, and Omer Ziv from <a href="http://www.google.com">Google</a>; David Berlow, Sam Berlow, Kent Lew, Cyrus Highsmith, and Jill Pichotta from <a href="http://fontbureau.typenetwork.com">The Font Bureau</a>; <a href="http://typemytype.com">Frederik Berlaen</a> for his tools and support, <a href="https://www.kutilek.de">Jens Kutílek</a> for RoboChrome; <a href="https://pixelambacht.nl">Roel Nieskens</a> for spelunking in Bungee Color; <a href="https://www.microsoft.com/en-us/Typography/default.aspx">Microsoft’s Typography team</a> for their early work on Bungee Color; <a href="http://www.retroscriptla.com">Emily Richardson</a> for coming up with the name; and <a href="http://13pt.com/corum/">Jon Corum</a>, John Downer, <a href="http://www.johnkramerdesign.biz">John Kramer</a>, <a href="http://kupferschrift.de/cms/">Indra Kupferschmid</a>, and <a href="http://andremora.com">André Mora</a>, for their thoughtful feedback and advice during the design process.</p>
+	 -->
+<!-- </section><section class="has-heading red" id="get"> -->
+	<!-- <h3>Get Bungee</h3>
+	<ul id="CTA">		
+		<li class="fit-to-width"><a class="button" href="https://github.com/djrrb/Bungee/releases/download/1.1.0/Bungee-fonts.zip">Download now↓</a></li>
+		<li class="fit-to-width"><a class="button" href="http://www.github.com/djrrb/bungee">Clone on GitHub→</a></li>
+		<li class="fit-to-width"><a class="button" href="http://fonts.google.com/?selection.family=Bungee&query=bungee">Bungee on Google Fonts→</a></li>
+	</ul> -->
+
+
+
+
+<!-- </section> -->
+</article>
+
+
+
+<!-- The design was <a href="https://www.tdc.org/competitionwriteup/tdc-typeface-design-winners-2014/">honored by the Type Directors Club</a> in 2014. -->
+
+
+
+
+<script src="js/size-to-width.js"></script>
+<!--
+<script src="js/jquery.mousewheel.js"></script>
+<script>
+	$(function(){
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});
+	});
+	</script>
+-->
+
+<script type="text/javascript">
+
+//MAIN MENU
+// eventually should probably do this via jQuery
+
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+- name: default
+  background:
+    hex: '2b859d'
+  inline:
+    hex: 'e8e8e7'
+  regular:
+    hex: 'ffffff'
+  shade:
+    hex: '215966'
+  outline:
+    hex: '215966'
+    active: false
+  sign:
+    hex: '247082'
+    active: false
+
+- name: red-on-white
+  background: 
+    hex: 'f8f5f4'
+  sign:
+    hex: 'f2eceb'
+    active: false
+  shade:
+    hex: 'ece4e1'
+  outline:
+    hex: 'ece4e1'
+    active: false
+  regular:
+    hex: 'd42b26'
+  inline:
+    hex: 'ef7575'
+  
+- name: red-on-dark
+  inline:
+    hex: 'FED0D2'
+  regular:
+    hex: 'E71B26'
+  outline:
+    hex: '5D0000'
+    active: false
+  shade:
+    hex: '000000'
+    alpha: .4
+  sign:
+    hex: '114752'
+    active: false
+  background:
+    hex: '490000'
+
+- name: blue-on-dark
+  inline:
+    hex: 'f6eecd'
+  regular:
+    hex: '23849f'
+  outline:
+    hex: '184b57'
+    active: false
+  shade:
+    hex: '102c34'
+  sign:
+    hex: '102c34' # temp
+    active: false
+  background:
+    hex: '184b57'
+    
+- name: teal
+  background: 
+    hex: '799089'
+  sign:
+    hex: '516b63'
+  shade:
+    hex: '39404c'
+    active: false
+  outline:
+    hex: '39404c'
+  regular:
+    hex: 'e8f3e7'
+  inline:
+    hex: 'add5b7'
+    
+- name: red-bg
+  inline:
+    hex: 'cccccc'
+  regular:
+    hex: 'e7e9db'
+  outline: 
+    hex: '090400'
+    active: false
+  shade:
+    hex: '090400'
+  sign:
+    hex: 'c31a03'
+  background:
+    hex: 'a02911'
+
+- name: blue
+  inline:
+    hex: '55A5FE'
+  regular:
+    hex: '0B5BA8'
+  outline:
+    hex: 'FFFFFF'
+  shade:
+    hex: '0B5BA8'
+    alpha: .2
+  sign:
+    hex: 'C1E6FF'
+    active: false
+  background:
+    hex: 'FFFFFF'
+
+- name: white-black-red
+  inline:
+    hex: 'EAE2B1'
+  regular:
+    hex: 'EFBB43'
+  outline: 
+    hex: '3E0E00'
+  shade:
+    hex: 'C9060E'
+  sign:
+    hex: '111111'
+  background:
+    hex: '333333'
+
+
+- name: cool-blues
+  inline:
+    hex: '1E5287'
+  regular:
+    hex: 'FFFFFF'
+  outline:
+    hex: '2E77C0'
+  shade:
+    hex: '000000'
+    alpha: .15
+    active: false
+  sign:
+    hex: '77B2DF'
+  background:
+    hex: 'D7D7D7'
+
+- name: peach-orange-purple
+  inline: 
+    hex: 'ff5140'
+  regular:
+    hex: 'ffda99'
+  outline:
+    hex: 'ff5140'
+  shade:
+    hex: '111111'
+    active: false
+  sign: 
+    hex: '26243a'
+  background:
+    hex: '111111'
+    
+- name: sherman
+  inline: 
+    hex: 'FFE10B'
+    active: false
+  outline:
+    hex: 'FFE10B'
+  regular:
+    hex: 'FFE10B'
+  shade:
+    hex: 'FF0035'
+  sign:
+    hex: '008FD6'
+    active: false
+  background:
+    hex: '009FEF'
